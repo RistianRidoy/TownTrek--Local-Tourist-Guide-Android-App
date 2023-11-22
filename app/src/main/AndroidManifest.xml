@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.towntrek">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:targetApi="33">
+        <activity
+            android:name=".TouredListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BucketListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeatherActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cityFinder"
+            android:exported="true" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBEzLp_8t3hsrgILVMTLGpQijdmhiMzEAc" />
+
+        <activity
+            android:name=".NearbyRestaurantsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_nearby_restaurants" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/animation01" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MakeSelection"
+            android:exported="true" />
+        <activity
+            android:name=".OTPValidation"
+            android:exported="true" />
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="true" />
+        <activity
+            android:name=".AllCategories"
+            android:exported="true" />
+        <activity
+            android:name=".PlanningScreen"
+            android:exported="true" />
+        <activity
+            android:name=".TutorialScreen"
+            android:exported="true" />
+        <activity
+            android:name=".AppLogoMotion"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="true" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UpdateProfile"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp3rdClass"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp2ndClass"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".RetailerStartupScreen"
+            android:exported="true" />
+        <activity
+            android:name=".TouristSpotsActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

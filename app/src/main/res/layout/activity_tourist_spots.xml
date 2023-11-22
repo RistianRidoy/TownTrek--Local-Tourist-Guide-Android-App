@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TouristSpotsActivity">
+
+
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/tourist_spots_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/edittext2"
+            android:padding="7dp"
+            android:src="@drawable/nearby_restaurant"
+            android:text="LOOK FOR NEARBY TOURIST SPOTS"
+            android:visibility="visible">
+
+        </Button>
+
+        <ImageButton
+            android:id="@+id/get_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext4"
+            android:foreground="@drawable/effect"
+            android:src="@drawable/ic_baseline_directions_24"
+            android:visibility="invisible">
+
+        </ImageButton>
+
+        <RelativeLayout
+            android:id="@+id/info_window"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-375dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext5">
+
+                <ImageView
+                    android:id="@+id/background_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Background Image" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/name_of_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="7dp"
+                android:fontFamily="@font/alegreya_sans_sc_medium"
+                android:padding="4dp"
+                android:text="Ansoo Lake"
+                android:textColor="@color/GhostWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/category_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/name_of_place"
+                android:layout_toEndOf="@+id/name_of_place"
+                android:fontFamily="@font/andika"
+                android:padding="3dp"
+                android:text="(Lake)"
+                android:textColor="@color/GhostWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/district_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_of_place"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="99dp"
+                android:fontFamily="@font/alegreya_sans_light"
+                android:padding="3dp"
+                android:text="Khyber Pakhtunkhwa"
+                android:textColor="@color/GhostWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/desc_of_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/district_name"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="-99dp"
+                android:layout_marginEnd="8dp"
+                android:text="Ansoo Lake is situated in Kaghan Valley of Pakistan. It is located near in the Himalayan range at the altitude of 4,245 meters (13,927 ft). This lake is considered to be one of the most beautiful lakes of the world. The name Ansoo comes from its tear-like shape. The lake also resembles a human eye with a central ice island resembling the iris and a ridge resembling an eyebrow, which becomes even more prominent when ice melts on the eyebrow during the summer. The lake is said to have been discovered in 1993 by Pakistan Air Force pilots who were flying low in the area.(Photo Credit: pakfocus.com)"
+                android:textColor="@color/GhostWhite"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/GhostWhite"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/signup_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:transitionName="transition_back_arrow_btn" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/signup_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/black_han_sans"
+                android:text="Create Account"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="45sp"
+                android:transitionName="transition_title_text" />
+            <TextView
+                android:id="@+id/signup_slide_text"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/black_han_sans"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="2/3"
+                android:background="@drawable/edittext"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:transitionName="transition_slide_text" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/changa_one"
+                android:text="Choose Gender"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:background="@drawable/edittext3"
+                    android:layout_width="83dp"
+                    android:layout_height="55dp"
+                    android:text="Male"
+                    android:fontFamily="@font/concert_one"
+                    android:textColor="@color/black"/>
+                <RadioButton
+                    android:id="@+id/female"
+                    android:background="@drawable/edittext3"
+                    android:layout_width="83dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Female"
+                    android:fontFamily="@font/concert_one"
+                    android:textColor="@color/black"/>
+                <RadioButton
+                    android:id="@+id/others"
+                    android:background="@drawable/edittext3"
+                    android:layout_width="83dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Others"
+                    android:fontFamily="@font/concert_one"
+                    android:textColor="@color/black"/>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/changa_one"
+                android:text="Select Your Age"
+                android:layout_marginBottom="9dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <DatePicker
+                android:id="@+id/age_picker"
+                android:background="@drawable/edittext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarTextColor="@color/black"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signup_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext3"
+            android:elevation="5dp"
+            android:onClick="call3rdSigupScreen"
+            android:fontFamily="@font/black_han_sans"
+            android:textSize="16sp"
+            android:text="@string/next_btn"
+            android:textColor="@color/black"
+            android:transitionName="transition_next_btn" />
+
+    </LinearLayout>
+
+
+</ScrollView>

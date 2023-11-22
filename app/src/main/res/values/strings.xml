@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TownTrek</string>
+
+    <!--Strings for tutorial screen-->
+
+    <!--Titles-->
+    <string name="first_slide_title">Plan</string>
+    <string name="second_slide_title">Search</string>
+    <string name="third_slide_title">Explore</string>
+
+    <!--Description-->
+    <string name="first_slide_desc">Get ready to explore, experience, and embark on an unforgettable journey with just a click.</string>
+    <string name="second_slide_desc">Discover the location of your destination and let the exploration begin.</string>
+    <string name="third_slide_desc">Immerse yourself in the finest historical places and local cuisines to uncover the essence of your destination.</string>
+
+    <!--Buttons-->
+    <string name="skip_btn">SKIP</string>
+    <string name="next_btn">NEXT</string>
+    <string name="lets_get_started">LETS GET STARTED</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key">AIzaSyBEzLp_8t3hsrgILVMTLGpQijdmhiMzEAc</string>
+    <string name="title_activity_nearby_restaurants">NearbyRestaurantsActivity</string>
+</resources>

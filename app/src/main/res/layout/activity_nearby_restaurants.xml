@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NearbyRestaurantsActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/restaurants_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/edittext2"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:src="@drawable/nearby_restaurant">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/hotels_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:background="@drawable/edittext2"
+            android:src="@drawable/nearby_hotel">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/hospitals_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edittext2"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:src="@drawable/nearby_hospital">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/atm_booth_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edittext2"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:src="@drawable/nearby_atm_booth">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

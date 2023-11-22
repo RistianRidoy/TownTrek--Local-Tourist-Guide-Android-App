@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#6B84B5"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profileimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profileimage" />
+
+            <TextView
+                android:id="@+id/fullnamefield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profileimage"
+                android:fontFamily="@font/aladin"
+                android:includeFontPadding="false"
+                android:text="ABDULLAH BIN HOSSAIN"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullnamefield"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profileimage"
+                android:includeFontPadding="false"
+                android:text="RistianUddin"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/update_image"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_field"
+                android:layout_marginHorizontal="110dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_baseline_camera_enhance_24"
+                android:elevation="5dp"
+                android:padding="5dp"
+                android:text="Update Profile"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-100dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/savings_cardview"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#6B84B5"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/dollar_sign"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_attach_money_24" />
+
+                    <TextView
+                        android:id="@+id/cashdescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dollar_sign"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/aladin"
+                        android:includeFontPadding="false"
+                        android:text="Savings"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bucketlist_cardview"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                app:cardBackgroundColor="#6B84B5"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bucketlist_sign"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_today_24" />
+
+                    <TextView
+                        android:id="@+id/Bookingdescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bucketlist_sign"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Bucket List"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/touredplaces_cardview"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                app:cardBackgroundColor="#6B84B5"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/touredplaces_sign"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_airplanemode_active_24" />
+
+                    <TextView
+                        android:id="@+id/TourDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/touredplaces_sign"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/aladin"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:text="Toured places"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="20dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="#000000"
+                android:hint="Full Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:textStyle="bold"
+                    android:text="Abdullah Bin Hossain"
+                    android:textColor="#000000">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/edittext"
+                android:hint="Email">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:text="abdullah@gmail.com"
+                    android:textColor="#000000">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#000000"
+                android:background="@drawable/edittext"
+                android:hint="Phone Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                    android:drawablePadding="10dp"
+                    android:text="+8801797120356"
+                    android:textStyle="bold"
+                    android:textColor="#000000">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="#000000"
+                android:hint="Bio">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:text="Travelling is my hobby"
+                    android:textColor="#000000">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="#000000"
+                android:hint="Age">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:text="23 Years"
+                    android:textColor="#000000">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/edittext2"
+                android:layout_height="wrap_content"
+                android:text="Update information"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aladin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

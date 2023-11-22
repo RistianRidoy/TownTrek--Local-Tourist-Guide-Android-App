@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5e5e8"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="93dp"
+        android:fontFamily="@font/caviardreamsbolditalic"
+        android:text="See the city through my eyes"
+        android:textAlignment="center"
+        android:textColor="#00008B"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="406dp"
+        android:layout_above="@+id/slogan"
+        android:layout_alignTop="@+id/slogan"
+        android:layout_marginTop="-479dp"
+        android:layout_marginBottom="73dp"
+        android:elevation="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/plane_around_the_world" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#2196F3">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            android:title="Home"
+            android:textColor="#000000"/>
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search"
+            android:textColor="#000000"/>
+        <item
+            android:id="@+id/nav_all_categories"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="View all categories" />
+        <item
+            android:id="@+id/nav_add_missing_place"
+            android:icon="@drawable/ic_baseline_add_box_24"
+            android:title="Add Wishlist"
+            android:textColor="#000000"/>
+    </group>
+
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_baseline_account_box_24"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_baseline_login_24"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_restaurants"
+                    android:icon="@drawable/ic_baseline_restaurant_menu_24"
+                    android:title="Restaurants" />
+                <item
+                    android:id="@+id/nav_hotels"
+                    android:icon="@drawable/ic_baseline_hotel_24"
+                    android:title="Hotels" />
+                <item
+                    android:id="@+id/nav_hospitals"
+                    android:icon="@drawable/ic_baseline_local_hospital_24"
+                    android:title="Hospitals" />
+                <item
+                    android:id="@+id/nav_banks"
+                    android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+                    android:title="Banks and ATMs" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/ic_baseline_rate_review_24"
+                    android:title="Rate US" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Contact Us">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_facebook"
+                    android:icon="@drawable/facebooknav"
+                    android:title="Facebook" />
+                <item
+                    android:id="@+id/nav_X"
+                    android:icon="@drawable/xnav"
+                    android:title="X" />
+                <item
+                    android:id="@+id/nav_phone"
+                    android:icon="@drawable/phonenav"
+                    android:title="Phone" />
+            </group>
+        </menu>
+    </item>
+</menu>
